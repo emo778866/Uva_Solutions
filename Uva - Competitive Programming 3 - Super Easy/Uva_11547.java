@@ -5,12 +5,31 @@ public class Uva_11547{
     BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
     BufferedWriter bw = new BufferedWriter (new OutputStreamWriter (System.out));
     Scanner sc = new Scanner(System.in);
-    int test = Integer.parseInt(br.readLine());
-    int n;
-    for(int i = 0; i < test; i++){
-      n = Integer.parseInt(br.readLine());
-      n = Math.abs((((((n*567)/9)+7492)*235)/47)-498);
-      System.out.println(n/10%10);
+    String s;
+    int c = 0;
+    while(!(s = br.readLine()).equals("#")){
+      System.out.print("Case "+(++c)+": ");
+      if(s.equals(("HELLO"))){
+        System.out.println("ENGLISH");
+      }
+      else if(s.equals(("HOLA"))){
+        System.out.println("SPANISH");
+      }
+      else if(s.equals(("HALLO"))){
+        System.out.println("GERMAN");
+      }
+      else if(s.equals(("BONJOUR"))){
+        System.out.println("FRENCH");
+      }
+      else if(s.equals(("CIAO"))){
+        System.out.println("ITALIAN");
+      }
+      else if(s.equals(("ZDRAVSTVUJTE"))){
+        System.out.println("RUSSIAN");
+      }
+      else{
+        System.out.println("UNKNOWN");
+      }
     }
   }
 }
