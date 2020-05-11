@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-class Uva_{
+public class Uva_11332{
   public static int f(int n){
     String s = n+"";
     int number = n;
